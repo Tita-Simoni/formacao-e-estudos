@@ -6,10 +6,11 @@ Este projeto foi desenvolvido como o primeiro desafio técnico durante o estági
 
 ## 🎯 Funcionalidades
 
-- Formulário de contato com validação de campos obrigatórios.
-- Caixa de seleção para o usuário escolher áreas de interesse.
-- Ações dinâmicas com **JavaScript** para habilitar o botão de envio conforme a conclusão do formulário.
-- Layout responsivo, adaptável a diferentes tamanhos de tela.
+- O formulário contém campos para nome, email, e mensagem.
+- Ao preencher o formulário, ele valida os campos para garantir que todos os dados sejam inseridos corretamente.
+- O formulário permite que o usuário selecione opções de interesse como UI/UX Design, Web Design, entre outras. Essas opções são armazenadas e exibidas na página seguinte.
+- Após o envio do formulário, os dados são salvos no localStorage, incluindo o nome, email, mensagem e as opções selecionadas.
+- Os dados salvos são recuperados na próxima página, onde o usuário pode visualizar as informações enviadas.
 
 ---
 
@@ -18,6 +19,7 @@ Este projeto foi desenvolvido como o primeiro desafio técnico durante o estági
 - **HTML5**: Estrutura da página e elementos de formulário.
 - **CSS3**: Estilização da página (responsividade, fontes, cores, etc.).
 - **JavaScript**: Validação do formulário e interação com o usuário.
-- **Fontes externas**: Google Fonts para tipografia personalizada.
 
 ---
+
+
