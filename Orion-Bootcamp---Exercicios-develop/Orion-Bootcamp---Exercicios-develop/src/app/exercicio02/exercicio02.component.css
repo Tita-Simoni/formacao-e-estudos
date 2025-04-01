@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@200&display=swap');
+
+body {
+    font-family: Poppins, sans-serif;    
+    margin-bottom: 5rem;
+}
+
+.btnShowItems {
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border: 1px solid #054F77;
+    border-radius: 10px;
+    background-color:#B8CAD4;
+    font-weight: 700;
+    width: 12rem;
+}
+
+.inputID {
+    height: 1rem;
+    width: 10rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border: 1.5px solid #054F77;
+    border-radius: 10px;
+}
+
+.btnOptions {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: 0.5rem;
+}
+
+.btn {
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border: 1px solid #054F77;
+    border-radius: 10px;
+    background-color:#B8CAD4;
+    font-weight: 500;
+    width: 30rem;
+    margin-bottom: 1.5rem;
+}
+
+.result {
+    margin-bottom: 2.5rem;
+}

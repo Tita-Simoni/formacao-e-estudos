@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@200&display=swap');
+
+body {
+    font-family: Poppins, sans-serif;    
+}
+
+.countVowels{
+    display: flex;
+}
+
+.inputWord{
+    height: 1rem;
+    width: 15rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border: 1.5px solid #054F77;
+    border-radius: 10px;
+}
+
+.btnCount {
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border: 1px solid #054F77;
+    border-radius: 10px;
+    background-color:#B8CAD4;
+    font-weight: 700;
+}
+
+.vowels {
+    font-size: 1rem;
+}

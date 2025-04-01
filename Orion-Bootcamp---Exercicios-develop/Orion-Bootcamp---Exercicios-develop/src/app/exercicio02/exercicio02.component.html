@@ -1,0 +1,42 @@
+<h2>Exercírio 02</h2>
+
+<div>
+    <div>
+        <button (click)="executeAction('showAll', $event)" class="btnShowItems">Mostrar todos os itens</button>
+        <div *ngIf="showAll">
+            <ul>
+                <li *ngFor="let item of list">
+                    <strong>ID:</strong> {{ item.id }}<br>
+                    <strong>Nome:</strong> {{ item.name }}<br>
+                    <strong>Biografia:</strong> {{ item.bio }}<br>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div>
+        <p>Insira o ID para buscar, deletar ou alterar:</p>
+        <input [(ngModel)]="id" class="inputID" type="number" placeholder="Digite o ID">
+    </div>
+
+    <div class="btnOptions">
+        <button (click)="executeAction('findBio', $event)" class="btn">Buscar Biografia</button>
+        <button (click)="executeAction('findName', $event)" class="btn">Buscar Nome</button>
+        <button (click)="executeAction('deleteItem', $event)" class="btn">Deletar Pessoa</button>
+        <button (click)="executeAction('updateItem', $event)" class="btn">Atualizar Pessoa</button> 
+    </div>
+
+    <div *ngIf="showUpdateFields">
+        <h2>Alterar os seguintes campos:</h2>
+        <input [(ngModel)]="newName" type="text" placeholder="Digitar novo nome">
+        <input [(ngModel)]="newBio" type="text" placeholder="Digitar nova biografia">
+        <button (click)="updateItem()">OK</button>
+    </div>
+
+    <div *ngIf="result">
+        <p class="result">{{ result }}</p>
+    </div>
+</div>
+
+  
