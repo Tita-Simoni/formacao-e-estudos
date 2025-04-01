@@ -1,9 +1,6 @@
 # Senac-PTI-III
 ## Protótipo de Software de Gestão Escolar
 
-
-![imagem apresenta sequência de telas de cadastro de software de gestão escolar](https://github.com/Tita-Simoni/Senac-PTI-III/blob/main/Prot%C3%B3tipo%20Gest%C3%A3o%20Escolar/Prot%C3%B3tipo%20Gest%C3%A3o%20Escolar.jpg "Telas de login e  cadastro de protótipo de software de gestão escolar")
-
 ### PASSOS DE CADASTRAMENTO
 
 Para o cadastramento vale ressaltar que existem três tipos de cadastros para a este tipo de unidade de negócio, cadastro de aluno, cadastro de professor e cadastro de fornecedor, onde, se fez necessário uma POO que estes três possíveis cadastros derivam de um principal. Com esta informação inicial, daremos segmento a sequência de cadastramento em nosso sistema.
