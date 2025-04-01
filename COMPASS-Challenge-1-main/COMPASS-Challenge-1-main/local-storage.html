@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados do Formulário</title>
+</head>
+<body>
+    <h1>Dados do Formulário</h1>
+    
+    <p><strong>Nome:</strong> <span id="name"></span></p>
+    <p><strong>Email:</strong> <span id="email"></span></p>
+    <p><strong>Mensagem:</strong> <span id="message"></span></p>
+    
+    <h3>Botões Selecionados:</h3>
+    <ul id="selectedButtons"></ul>
+
+    <script>
+        // Recupera os dados do localStorage
+        const formData = JSON.parse(localStorage.getItem("form"));
+        
+        if (formData) {
+            // Preenche os campos com os dados do localStorage
+            document.getElementById('name').innerText = formData.name;
+            document.getElementById('email').innerText = formData.email;
+            document.getElementById('message').innerText = formData.message;
+
+            // Exibe os botões selecionados
+            const selectedButtonsList = document.getElementById('selectedButtons');
+            formData.selectedButtons.forEach(button => {
+                const listItem = document.createElement('li');
+                listItem.innerText = button;  // Adiciona o texto do botão selecionado
+                selectedButtonsList.appendChild(listItem);
+            });
+        } else {
+            alert("Nenhum dado encontrado no localStorage.");
+        }
+    </script>
+</body>
+</html>
