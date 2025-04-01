@@ -22,4 +22,6 @@ Este projeto foi desenvolvido como o primeiro desafio técnico durante o estági
 
 ---
 
+## Visualização dos Projeto:
+https://67ec2395bb9c6d4105adfa77--tubular-marzipan-4a1f0a.netlify.app/
 
