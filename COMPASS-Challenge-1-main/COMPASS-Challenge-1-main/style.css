@@ -1,0 +1,250 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+html, body{
+    overflow: hidden;
+}
+
+.gridContainer{
+    display: grid;
+    grid-template-columns: 40rem 40rem;
+    grid-gap: 2rem;
+    padding: 0rem;
+    margin: 0rem;
+    height: 100vh;
+    width: 100vh;
+
+    padding-bottom: 2rem;
+}
+
+body{
+    max-width: 90rem;
+    max-height: 40rem;   
+    background-color: #2e0249;    
+    background-size: cover;
+    border-radius: 2rem;
+}   
+
+h1{
+    grid-column: 1;
+    
+    font-weight: bold;
+    font-style: normal;   
+    font-size: 3rem;
+    line-height: 4rem;
+    color: #EEEEEE;   
+
+    margin-left: 3rem;
+}
+
+.cool{
+    color: #a91079;
+}
+
+.contact_info {
+    grid-column: 1;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    color: #EEEEEE;
+
+    padding: 1.5rem 16rem 1.5rem 1.5rem;
+
+    margin-top: 0.5rem;
+    margin-left: 3rem;    
+             
+}
+
+#phone{
+    background: rgba(87, 10, 87, 0.5);
+    border: 0.2rem solid #a91079;
+    border-radius: 1rem;   
+    
+    margin-right: 2rem;
+}
+
+.aside_content{
+    padding: 3rem;
+    border-radius: 1.5rem;
+    border-bottom: 0.1rem solid #2e0249;
+    margin-top: 3rem;
+    background-color: #EEEEEE;
+
+    width: 33rem;
+    height: 75vh;    
+}
+
+h2.form_title {
+    grid-column: 2;
+    
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    font-style: bold;
+    color: #2e0249;
+
+    margin-top: 0;
+}
+
+.checkbox-container {
+    grid-column: 2;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 0.6rem;      
+    width: auto;
+    height: 6rem;    
+}
+
+.checkbox-box {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.checkbox-box label {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 1.15rem;
+    line-height: 2rem;
+    color:rgba(46, 2, 73, 0.3);
+    padding-left: 1.5rem;
+}
+
+.checkbox-box label::before {
+    content: "";
+    display: inline-block;
+    cursor: pointer;
+    align-items: center;
+    height: 1.5rem;
+    width: 1.5rem;
+    border: 0.125rem solid rgba(46, 2, 73, 0.3);
+    border-radius: 0.5rem;
+    background-color: #EEEEEE;
+    transition: background-color 0.3s ease;
+}
+
+.checkbox-box input[type="checkbox"] {
+    display: none;
+}
+
+.checkbox-box input[type="checkbox"]:checked + label::before {
+    background-color: #a91079;
+    color: #EEEEEE;
+}
+
+.checkbox-box input[type="checkbox"]:checked + label {
+    background-color: #a91079;
+    color: #EEEEEE;
+}
+
+#item_ui {
+    grid-column: 1;
+    grid-row: 1;
+    height: 100%;
+    width: 100%;
+}
+
+#item_web {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#item_graphic {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+#item_system {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#item_other {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+input{
+    display: block;
+    width: 100%;
+
+    padding-top: 1.25rem;
+
+    background-color: transparent;
+    border: 0.125rem solid transparent;
+    border-bottom-color: rgba(46, 2, 73, 0.3);
+}
+
+input:hover{
+    background-color: transparent;
+    border: 0.125rem solid transparent;
+    border-bottom-color: #2e0249;
+
+}
+
+.button {
+    grid-column: 2;
+        
+    margin-top: 3rem;
+    background-color: #a91079;
+    width: 20rem;
+    height: 4rem;
+    border-radius: 1rem;
+
+    color: white;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+#sendButton :disabled{
+    background-color: #d5cfde;
+    color: #989797;
+    cursor: not-allowed;
+}
+
+.footer_logos {
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;    
+
+    gap: 2rem;
+
+}
+
+#logo_facebook {
+    margin: 0 0.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+
+}
+#logo_instagram {
+    margin: 0 0.5rem;
+    width: 3rem;
+    height: 3rem;
+
+}
+
+#logo_twitter {
+    margin: 0 0.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+
+}

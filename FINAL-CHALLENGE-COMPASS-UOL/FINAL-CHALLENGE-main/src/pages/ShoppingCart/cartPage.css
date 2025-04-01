@@ -1,0 +1,88 @@
+.productsCart {
+    display: flex;
+    margin: 1.2rem;
+}
+
+.blockCart {
+    display: flex;
+    justify-content: space-between;
+    width: 11rem;
+    margin-left: 1rem;    
+}
+
+.productsCart {
+    display: flex;
+    flex-direction: column;    
+}
+
+.productCart {
+    width: 4.5rem;
+    height: 4.5rem;
+    padding: 10px;
+    display: flex;    
+    border-radius: 10px;
+    background-color: #F6F6F6;
+    margin-bottom: 1rem;
+}
+
+#productImg {
+    width: 5rem;
+    height: 5rem;
+}
+
+.productNameCart {
+    font-size: 1rem;
+    font-weight: 400;   
+    margin-left: 1rem;   
+}
+
+.productPriceCart {
+    font-size: 0.8rem;
+    font-weight: 700;    
+    margin-left: 1rem;  
+    margin-bottom: 1rem;
+}
+
+.plusMinus {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 7rem;
+}
+
+#trashIcon {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+#plusMinus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 0.7rem;
+    height: 0.7rem;
+    padding: 0.6rem 0.6rem;
+    border-radius: 10px;
+    border: 1px solid #BABABA;
+    background-color: #FFF;
+}
+
+.totalPrice {
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+#totalItems {
+    font-size: 0.75rem;
+    font-weight: 700;
+    line-height: 1.25rem;   
+}
+
+#totalCost {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.25rem;   
+}

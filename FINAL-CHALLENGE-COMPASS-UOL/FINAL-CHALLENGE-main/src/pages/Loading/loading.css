@@ -1,0 +1,19 @@
+.loading {
+    width: 2rem;
+    height: auto;
+    font-size: 1rem;
+    margin: auto;    
+    animation: spin 1s linear infinite;    
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}

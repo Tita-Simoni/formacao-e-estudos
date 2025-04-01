@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contac Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <main class="gridContainer">        
+        <section>
+            <h1 >Let's discuss on something <strong class="cool">cool</strong> together</h1> 
+                        
+            <dl> 
+                <dt class="contact_info">
+                    <img src="images/envelopeFill.png" alt="logo_email" hspace="20">
+                    TitaDesign@gmail.com</dt>
+                <dt class="contact_info" id="phone">
+                    <img src="images/TelephoneFill.png" alt="logo_phone" hspace="20">                                     
+                    +123 456 789</dt>                
+                <dt class="contact_info">
+                    <img src="images/Vector.png" alt="logo_address" hspace="20">
+                    123 Street 456 House</dt>
+            </dl>
+
+            <footer class="footer_logos">
+                <img src="images/Vector (1).png" alt="logo_facebook" id="logo_facebook">
+                <img src="images/Group 1 (1).png" alt="logo_instagram" id="logo_instagram">
+                <img src="images/Vector (2).png" alt="logo_twitter" id="logo_twitter">           
+           </footer>            
+        </section>
+       
+        <aside class="aside_content">                        
+            <form action="#" id="formFields"  method="post" autocomplete="off">
+                <h2 class="form_title">I'm interested in...</h2>
+                <div class="checkbox-container">
+                    <div class="checkbox-box">
+                        <input type="checkbox" id="item_ui" name="item_ui" value="option1">
+                        <label for="item_ui" id="item_ui">UI/UX design</label>
+                    </div>
+                    <div class="checkbox-box">
+                        <input type="checkbox" id="item_web" name="item_web" value="option2">
+                        <label for="item_web" id="item_web">Web design</label>
+                    </div>
+                    <div class="checkbox-box">
+                        <input type="checkbox" id="item_graphic" name="item_graphic" value="option3">
+                        <label for="item_graphic" id="item_graphic">Graphic design</label>
+                    </div>
+                    <div class="checkbox-box">
+                        <input type="checkbox" id="item_system" name="item_system" value="option4">
+                        <label for="item_system" id="item_system">Design system</label>
+                    </div>
+                    <div class="checkbox-box">
+                        <input type="checkbox" id="item_other" name="item_other" value="option5">
+                        <label for="item_other" id="item_other">Other</label>
+                    </div>
+                </div>              
+
+                    <p>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>                        
+                    </p>
+                    <p>
+                        <input type="email" id="email" email="email" placeholder="Your email" required/>  
+                    </p>
+                    <p>
+                        <input type="text" id="message" message="message" placeholder="Your message" required>
+                    </p>                           
+                    <p>
+                        <button type="submit" class="button" id="buttonSend" disabled="disabled">
+                            <img src="images/Vector (3).png" alt="logo_message" hspace="20">
+                            Send Message</button>
+                    </p>            
+                                        
+                </fieldset>
+
+            </form>
+
+       </aside>     
+
+    </main>
+    <script src="code.js"></script>
+</body>
+</html>
